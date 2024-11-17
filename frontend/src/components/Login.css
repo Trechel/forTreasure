@@ -1,0 +1,64 @@
+/* Login Page Styles */
+.login {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 85.8vh; /* Set height to 90% of the viewport */
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px; /* Padding around the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.login__container {
+    background-color: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside the form */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Maximum width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for form */
+}
+
+.login__title {
+    font-size: 1.5rem; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center title */
+    color: #333; /* Dark text for contrast */
+}
+
+.login__input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+}
+
+.login__button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    background-color: rgb(5, 5, 5); /* Primary button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover */
+}
+
+.login__button:hover {
+    background-color: rgb(48, 48, 48); /* Darker shade on hover */
+}
+
+.login__link {
+    display: block; /* Make link block-level */
+    margin-top: 15px; /* Space above link */
+    text-align: center; /* Center text */
+    color: rgb(0, 158, 150); /* Color of the link */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.login__link:hover {
+    color: rgb(0, 140, 130); /* Darker shade on hover */
+}

@@ -1,0 +1,109 @@
+/* LocationModal.css */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-open {
+    display: block; /* Show the modal */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Set a maximum width */
+    position: relative; /* For positioning the close button */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px; /* Increased size for better visibility */
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: brown; /* Brown background on hover */
+    color: white; /* Change text color for contrast */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+.current-location {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.location-icon, .search-icon {
+    font-size: 32px; /* Increased icon size */
+    margin-right: 10px;
+}
+
+.current-location-text {
+    flex-grow: 1; /* Take remaining space */
+}
+
+.change-button {
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-container input {
+    flex-grow: 1; /* Take available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.loading-icon {
+    margin-left: 10px;
+}
+
+.location-results {
+    margin-top: 10px;
+}
+
+.location-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.location-item:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+.done-button {
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-top: 10px;
+}

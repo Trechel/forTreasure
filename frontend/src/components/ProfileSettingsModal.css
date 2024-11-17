@@ -1,0 +1,131 @@
+/* ProfileSettingsModal.css */
+
+.profile-settings-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+    animation: fadeIn 0.5s ease; /* Add fade-in animation */
+}
+
+.modal-content {
+    background-color: white; /* White background for content */
+    border-radius: 8px;
+    width: 80%; /* Responsive width */
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    position: relative; /* For positioning close button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    animation: slideIn 0.5s ease; /* Add slide-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #c00; /* Change color for visibility */
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #900; /* Darker on hover */
+}
+
+.settings-left {
+    width: 30%; /* Left panel for settings options */
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+.settings-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-left li {
+    margin: 15px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    padding: 5px;
+    color: #333; /* Dark text color for better visibility */
+}
+
+.settings-left li:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    color: #007bff; /* Change text color on hover */
+}
+
+.settings-left li svg {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.settings-right {
+    width: 70%; /* Right panel for selected settings content */
+    padding-left: 20px;
+}
+
+h3 {
+    margin-top: 0; /* Remove default margin */
+    color: #333; /* Darker color for headings */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px; /* Space above and below labels */
+    color: #555; /* Slightly lighter color for labels */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select {
+    width: 100%; /* Full width for inputs */
+    padding: 8px;
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Smooth border transition */
+    background-color: rgb(233, 233, 233);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}

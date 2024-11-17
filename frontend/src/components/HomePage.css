@@ -1,0 +1,295 @@
+/* General Page Layout */
+.home {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Hero Section */
+.home__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width of the viewport */
+  background: linear-gradient(135deg, #3b2a2a, #000); /* Dark gradient background */
+  color: #fff;
+  text-align: center;
+  padding: 40px; /* Increased padding */
+  box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.home__title {
+  font-size: 6rem; /* Increased font size */
+  font-weight: bold;
+  margin: 0;
+}
+
+.home__slogan {
+  font-size: 2.5rem; /* Increased font size */
+  color: #e4e4e4;
+  margin-top: 10px;
+}
+
+/* Fuel Prices Section */
+.home__fuel-prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px; /* Increased padding */
+  background-color: #fff; /* White background */
+  color: #333; /* Text color */
+  width: 100%;
+  height: 15vh; /* Increased height */
+}
+
+.home__fuel-prices h2 {
+  font-size: 3.5rem; /* Increased font size */
+  color: #333; /* Heading color */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+.fuel-prices-container {
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center the fuel cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.fuel-card {
+  background-color: #ffffff; /* White background for cards */
+  padding: 40px; /* Increased padding */
+  margin: 20px; /* Increased margin */
+  width: 300px; /* Wider cards */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  position: relative; /* For animation */
+}
+
+.fuel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fuel-card--diesel {
+  color: #006400; /* Dark green for diesel */
+}
+
+.fuel-card--petrol {
+  color: #8b0000; /* Dark red for petrol */
+}
+
+/* Summary Section */
+.summary-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; /* Center items */
+  padding: 80px 20px; /* Increased padding */
+  width: 100%;
+  background-color: #ffffff; /* Light gray */
+  color: #333; /* Dark text */
+  height: 80vh; /* Increased height */
+}
+
+.summary-image {
+  width: 800px; /* Increased image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-right: 30px; /* Spacing between image and text */
+}
+
+.summary-text {
+  max-width: 800px; /* Limit the width of the text */
+}
+
+.summary-button {
+  margin-top: 20px;
+  padding: 15px 30px; /* Increased padding */
+  background-color: black; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.summary-button:hover {
+  background-color: rgb(90, 90, 90); /* Button hover color */
+}
+
+/* Fuel Service Section */
+.home__fuel-service {
+  display: flex;
+  align-items: center; /* Align items in the center */
+  justify-content: space-around; /* Space out items */
+  padding: 80px 20px; /* Increased padding */
+  width: 100%;
+  background-color: #1d1a1a; /* White background */
+  color: #ffffff; /* Text color */
+  height: 80vh; /* Increased height */
+}
+
+.fuel-service-image {
+  width: 800px; /* Increased image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.fuel-service-text {
+  max-width: 800px; /* Limit the width of the text */
+}
+
+.order-button {
+  margin-top: 20px;
+  padding: 15px 30px; /* Increased padding */
+  background-color: brown; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.order-button:hover {
+  background-color: brown; /* Button hover color */
+}
+
+/* Tyre Repair Service Section */
+.home__tyre-service {
+  display: flex;
+  align-items: center; /* Align items in the center */
+  justify-content: space-around; /* Space out items */
+  padding: 80px 20px; /* Increased padding */
+  width: 100%;
+  background-color: #f0f0f0; /* Light gray */
+  color: #333; /* Dark text */
+  height: 80vh; /* Increased height */
+}
+
+.tyre-service-image {
+  width: 800px; /* Increased image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.tyre-service-text {
+  max-width: 800px; /* Limit the width of the text */
+}
+
+/* Enquiry Form */
+.home__enquiry {
+  display: flex;
+  flex-direction: column; /* Flex to align enquiry form and text */
+  align-items: center; /* Center the enquiry section */
+  padding: 80px 20px; /* Increased padding */
+  width: 100%;
+  background-color: #fff; /* White background */
+  height: 50vh; /* Increased height */
+}
+
+.enquire_P2 {
+  display: flex;
+  flex-direction: column; /* Stack form vertically */
+  align-items: center; /* Center form items */
+}
+
+.home__enquiry h2 {
+  font-size: 3.5rem; /* Increased font size */
+  color: #333; /* Heading color */
+  margin-bottom: 30px; /* Increased margin */
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+  max-width: 600px; /* Increased width */
+  margin: 0 auto;
+  width: 100%; /* Make the form responsive */
+}
+
+.enquiry-form input,
+.enquiry-form textarea,
+.enquiry-form select {
+  width: 90%; /* Make inputs full width */
+  padding: 15px; /* Increased padding */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enquiry-form button {
+  padding: 15px 30px; /* Increased padding */
+  background-color: black; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Increased font size */
+  width: 100%;
+}
+
+.enquiry-form button:hover {
+  background-color: rgb(68, 68, 68); /* Button hover color */
+}
+
+.contact-text {
+  text-align: center; /* Center the contact text */
+}
+
+/* Login and Signup Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px; /* Increased padding */
+  background-color: #fff; /* White background */
+  width: 100%;
+  height: 100vh; /* Full height for auth section */
+}
+
+.auth-form {
+  background-color: #f9f9f9; /* Light gray background for form */
+  padding: 40px; /* Padding around form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px; /* Fixed width for the form */
+}
+
+.auth-form h2 {
+  margin-bottom: 20px; /* Margin below heading */
+  font-size: 2.5rem; /* Heading font size */
+}
+
+.auth-form input {
+  width: 100%; /* Full width inputs */
+  padding: 15px; /* Padding inside inputs */
+  margin-bottom: 20px; /* Space between inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  padding: 15px 30px; /* Increased padding */
+  background-color: black; /* Button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.auth-form button:hover {
+  background-color: brown; /* Button hover color */
+}

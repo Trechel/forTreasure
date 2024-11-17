@@ -1,0 +1,29 @@
+{
+    "users": [
+        {
+            "username": "user1",
+            "password": "pass1",
+            "account" : "fuel"
+        },
+        {
+            "username": "user2",
+            "password": "pass2",
+            "account" : "fuel"
+        },
+        {
+            "username": "user3",
+            "password": "pass3",
+            "account" : "fuel"
+        },
+        {
+            "username": "user4",
+            "password": "pass4",
+            "account" : "fuel"
+        },
+        {
+            "username": "user5",
+            "password": "pass5",
+            "account" : "fuel"
+        }
+    ]
+}

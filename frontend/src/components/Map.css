@@ -1,0 +1,44 @@
+/* Map.css */
+
+/* Map Container */
+.map {
+  flex: 0.8; /* Adjusted flex value to take up less space next to sidebar */
+  background-color: #eaeaea; /* Light background for map area */
+  position: relative; /* Positioning context for map component */
+  overflow: hidden; /* Prevent scrolling */
+  border: 2px solid #007bff; /* Blue border around the map */
+  border-radius: 8px; /* Rounded corners for the border */
+  margin: 10px; /* Optional: add some margin around the container */
+}
+
+/* Popup Styling */
+.map-popup {
+  padding: 10px; /* Padding for popup */
+  border-radius: 5px; /* Rounded corners */
+  background-color: white; /* White background for popup */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.map-popup h4 {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Font size for title */
+}
+
+.map-popup p {
+  margin: 5px 0; /* Margin for description */
+}
+
+/* Button Styling inside Popup */
+.map-popup button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.map-popup button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,96 @@
+/* Container and Layout */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    background-color: #eeeeee; /* Background color */
+}
+
+.fuel-container {
+    max-width: 1000px; /* Increase maximum width of the container */
+    width: 90%; /* Allow the container to use 90% of the width */
+    padding: 50px; /* Increase padding */
+    background-color: transparent; /* Transparent background for the container */
+    border-radius: 12px; /* Slightly larger border radius */
+    text-align: left; /* Align text to the left */
+    margin-left: 25%;
+}
+
+.fuel-header {
+    font-size: 32px; /* Increase font size */
+    margin-bottom: 30px; /* Increase bottom margin */
+    color: #000; /* Black text */
+}
+
+/* Form Styling */
+.fuel-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 30px; /* Increase gap between columns */
+}
+
+.form-section {
+    padding: 30px; /* Increase padding for form sections */
+    background-color: #f9f9f9; /* Light gray for form sections */
+    border-radius: 12px; /* Larger border radius */
+}
+
+.totals-section {
+    grid-column: span 2; /* Span both columns */
+    text-align: center;
+    margin-top: 30px; /* Increase top margin */
+    padding: 25px; /* Increase padding */
+    background-color: #f9f9f9; /* Light gray for totals section */
+    border-radius: 12px; /* Larger border radius */
+}
+
+h3 {
+    font-size: 24px; /* Increase font size */
+    color: #000; /* Black text */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 25px; /* Increase bottom margin */
+}
+
+label {
+    font-size: 18px; /* Increase font size */
+    color: #000; /* Black text */
+    margin-bottom: 10px; /* Increase bottom margin */
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px; /* Increase padding */
+    border: 1px solid #000; /* Black border */
+    border-radius: 6px; /* Larger border radius */
+    font-size: 18px; /* Increase font size */
+    color: #000; /* Black text */
+    background-color: #fff; /* White background for input fields */
+}
+
+/* Button */
+.checkout-button {
+    padding: 15px 25px; /* Increase padding */
+    background-color: #000; /* Black background for button */
+    color: #fff; /* White text for button */
+    border: none;
+    border-radius: 6px; /* Larger border radius */
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+    width: 100%; /* Full width */
+}
+
+.checkout-button:hover {
+    background-color: #444; /* Darker shade for hover */
+}
+
+.liters-display {
+    font-weight: bold;
+    font-size: 18px; /* Increase font size */
+    color: #000; /* Black text */
+}

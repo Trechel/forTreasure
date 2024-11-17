@@ -1,0 +1,200 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Spreads items to edges */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Keep header fixed */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align with the left edge */
+    right: 0; /* Align with the right edge */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Adjust the main home content to account for the fixed header */
+.home {
+    margin-top: 60px; /* Add margin-top equal to the header height to prevent overlap */
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__company {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 30px; /* Increased spacing */
+    transition: color 0.3s; /* Animation for text color */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.header__company:hover {
+    cursor: pointer;
+}
+
+.header__location {
+    font-size: 1rem;
+    margin-right: 30px; /* Increased spacing */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s; /* Animation for background */
+}
+
+.header__location:hover {
+    cursor: pointer;
+}
+
+.location__icon {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.header__tyre-fuel {
+    display: flex;
+    gap: 5px; /* Space between buttons */
+    background-color: #f0f0f0; /* Grey background for the button container */
+    border-radius: 25px; /* Rounded corners */
+    padding: 5px; /* Padding around buttons */
+    width: 180px; /* Fixed width */
+    height: 30px; /* Fixed height */
+}
+
+.tyre-fuel__button {
+    flex: 1; /* Make buttons take equal space */
+    border: none; /* Remove border */
+    padding: 5px 0; /* Adjusted height for thinner buttons */
+    cursor: pointer;
+    color: #000000;
+    background-color: transparent; /* Transparent background for non-selected */
+    border-radius: 25px; /* More curvature */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, transform 0.2s; /* Animation for hover */
+    font-size: 1rem; /* Adjusted font size */
+}
+
+.tyre-fuel__button.selected {
+    background-color: white; /* White background for selected button */
+    color: #000000; /* Ensure text color is visible */
+}
+
+.tyre-fuel__button:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__cart {
+    position: relative;
+    margin-right: 30px; /* Increased spacing */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animation for background */
+}
+
+.cart__icon {
+    font-size: 1.5rem;
+}
+
+.cart__count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: rgb(0, 158, 150);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 0.75rem;
+}
+
+.header__auth {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 30px; /* Increased spacing */
+}
+
+.auth__button {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    color: #333;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Animation for hover */
+    text-decoration: none; /* Remove underline */
+}
+
+.auth__button:hover {
+    background-color: rgba(209, 209, 209, 0.6); /* Darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.header__hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animation for background */
+}
+
+.hamburger__icon {
+    font-size: 1.5rem;
+}
+
+.header__hamburger:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker background on hover */
+    border-radius: 5px; /* Rounded corners for hamburger */
+}
+
+/* Side Menu Styles */
+/* Side Menu Styles */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen */
+    width: 250px; /* Fixed width */
+    height: auto; /* Adjust height according to content */
+    background: rgba(0, 0, 0, 0.479); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; /* Smooth slide-in/out */
+    z-index: 2000; /* Ensure it's above other content */
+}
+
+/* Active state for the side menu */
+.side-menu.active {
+    right: 0; /* Slide in */
+}
+
+/* Close button for the side menu */
+.close-menu {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    margin: 10px;
+    align-self: flex-end; /* Position it at the top right */
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}

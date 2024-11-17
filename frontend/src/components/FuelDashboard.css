@@ -1,0 +1,90 @@
+/* Dashboard.css */
+
+/* Basic Reset */
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Dashboard Container */
+.dashboard {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack headers and body vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Header Styling */
+.headers {
+  display: flex; /* Flexbox for headers items */
+  justify-content: space-between; /* Space between title and menu */
+  align-items: center; /* Center vertically */
+  padding: 15px 20px; /* Padding for headers */
+  background-color: #282c34; /* Dark background color */
+  color: white; /* White text color */
+}
+
+.headers__title {
+  font-size: 24px; /* Title font size */
+  margin: 0; /* Remove default margin */
+}
+
+.headers__menu {
+  display: flex; /* Flexbox for menu items */
+}
+
+.headers__menu ul {
+  list-style: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Align items in a row */
+}
+
+.headers__menu-item {
+  margin-left: 20px; /* Space between menu items */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.headers__menu-item:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+/* Dashboard Body */
+.dashboard-body {
+  display: flex; /* Use flexbox for the body layout */
+  flex: 1; /* Take up remaining space */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px; /* Fixed width for sidebar */
+  background-color: #f4f4f4; /* Light background color for sidebar */
+  padding: 20px; /* Padding for sidebar content */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  transition: transform 0.3s ease; /* Smooth transition for hiding/showing */
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%); /* Slide out of view */
+}
+
+.sidebar.visible {
+  transform: translateX(0); /* Slide into view */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.sidebar-item {
+  margin: 15px 0; /* Space between sidebar items */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.sidebar-item:hover {
+  color: #61dafb; /* Change color on hover */
+}

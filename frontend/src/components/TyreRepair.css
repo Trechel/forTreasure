@@ -1,0 +1,114 @@
+.tyre-repair-container {
+    height: 81.7vh;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tyre-repair-header {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ccc; /* Added border */
+    padding-bottom: 10px; /* Spacing below the header */
+    margin-bottom: 20px; /* Margin below the header */
+    font-size: 24px; /* Increased header font size */
+}
+
+.tyre-repair-content {
+    display: flex;
+    flex-direction: row; /* Align sections in a row */
+    justify-content: space-between;
+}
+
+.tyre-info-section,
+.location-payment-section {
+    flex: 1; /* Each section takes equal width */
+    margin-right: 20px;
+    padding: 20px; /* Increased padding for more space */
+    background-color: #eef2f5; /* Background color for sections */
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    min-width: 400px; /* Set a minimum width to prevent squishing */
+}
+
+.location-payment-section {
+    margin-right: 0; /* Remove margin for the last section */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased margin for more spacing */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width for form groups */
+}
+
+label {
+    margin-bottom: 0; /* Remove margin below labels */
+    font-weight: bold;
+    font-size: 18px; /* Increased font size for labels */
+    width: 30%; /* Set width for label to allow space for icon */
+}
+
+.input-field {
+    flex: 1; /* Make input fields take available space */
+    padding: 12px; /* Increased padding for bigger inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* Increased font size */
+    margin-left: 10px; /* Add space between label and input */
+}
+
+textarea.input-field {
+    resize: vertical; /* Allow vertical resizing only */
+    height: 100px; /* Set a default height for textareas */
+}
+
+.submit-button {
+    padding: 12px 15px; /* Increased padding for better appearance */
+    background-color: #007BFF; /* Blue background for submit button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block; /* Make the button block-level */
+    width: 100%; /* Full width */
+    transition: background-color 0.3s;
+    font-size: 18px; /* Increased font size for button */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styling for icons */
+.form-group svg {
+    margin-right: 10px; /* Add space between icon and text */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Specific styling for file input section */
+.form-group.file-input {
+    flex-direction: column; /* Stack label above input */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.input-field[type="file"] {
+    width: 100%; /* Full width for file input */
+    margin-top: 5px; /* Spacing above the file input */
+}

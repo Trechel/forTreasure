@@ -1,0 +1,12 @@
+/* Ensures no horizontal scroll */
+body, html, .App {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Ensure all sections span the viewport width */
+.App {
+  width: 100vw; /* Sets width to 100% of the viewport width */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}

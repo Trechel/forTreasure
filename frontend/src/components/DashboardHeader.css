@@ -1,0 +1,53 @@
+/* DashboardHeader.css */
+
+/* Header Styling */
+.headers {
+  display: flex; /* Flexbox for header items */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center vertically */
+  padding: 15px 20px; /* Padding for headers */
+  background-color: #282c34; /* Dark background color */
+  color: white; /* White text color */
+}
+
+/* Title */
+.headers__title {
+  font-size: 24px; /* Title font size */
+  margin: 0; /* Remove default margin */
+  flex-grow: 1; /* Allow title to take available space */
+}
+
+/* Menu Styling */
+.headers__menu {
+  display: flex; /* Flexbox for menu items */
+  margin-right: 20px; /* Space between menu and profile icon */
+}
+
+/* Menu List */
+.headers__menu ul {
+  list-style: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Align items in a row */
+}
+
+/* Menu Items */
+.headers__menu-item {
+  margin-left: 20px; /* Space between menu items */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.headers__menu-item:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+/* Profile Button Styling */
+.headers__profile {
+  background: transparent; /* Transparent background for button */
+  border: none; /* No border */
+  color: white; /* White color for the icon */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 24px; /* Size for the profile icon */
+  margin-left: auto; /* Push profile icon to the far right */
+}

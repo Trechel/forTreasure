@@ -1,0 +1,189 @@
+/* BecomeDriver.css */
+
+.become-driver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    animation: fadeIn 1s ease-in;
+    text-align: center;
+}
+
+/* Top Section */
+.top-section {
+    background: linear-gradient(180deg, #000000, #1a1a1a); /* Gradient from dark to lighter black */
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 3rem;
+}
+
+.intro-section {
+    color: #fff; /* Keep text color white for contrast */
+}
+
+.intro-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.intro-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.signup-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 2rem;
+    margin-top: 2rem; /* Add margin for spacing from the intro */
+}
+
+.signup-buttons a {
+    text-decoration: none; /* Remove underline from both buttons */
+}
+
+.signup-buttons a:hover {
+    text-decoration: none; /* Ensure no underline on hover for both buttons */
+}
+
+.signup-button,
+.login-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.signup-button {
+    background-color: #28a745; /* Green color for Sign Up button */
+}
+
+.login-button {
+    background-color: #007bff; /* Blue color for Login button */
+}
+
+.signup-button:hover,
+.login-button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.video-section p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Flowchart Section */
+.flowchart-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    animation: slideInFromBottom 0.8s ease-out;
+}
+
+.flowchart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container {
+    font-size: 3.5rem;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+}
+
+.text-container {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.text-container h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0 0;
+}
+
+.arrow-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

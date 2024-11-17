@@ -1,0 +1,165 @@
+.help-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-top: 60px; /* Push the content below the header */
+    border-radius: 8px; /* Add some rounding to corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+    animation: fadeIn 0.5s ease-in-out; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.search-section {
+    margin-bottom: 20px;
+    text-align: center; /* Center the search section */
+}
+
+.search-section h2 {
+    margin-bottom: 10px; /* Space between heading and input */
+}
+
+.search-input-container {
+    position: relative; /* Set to relative to position icon inside */
+    display: inline-block; /* Keep the input and icon in line */
+    width: 100%; /* Make the container full width */
+    max-width: 800px; /* Set a maximum width for the input container */
+}
+
+.search-input {
+    width: 100%; /* Set width to 100% of the container */
+    padding: 15px; /* Increased padding for a bigger input */
+    padding-left: 50px; /* Space for icon */
+    font-size: 1.2em; /* Increase font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Add shadow for input */
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px; /* Position the search icon inside the input */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em; /* Increase icon size */
+    color: #666;
+}
+
+.info-blocks {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 20px; /* Space between blocks */
+    justify-content: center; /* Center blocks in the container */
+    margin-bottom: 30px;
+}
+
+.info-block {
+    flex: 1 1 calc(40% - 20px); /* Two blocks per row with spacing */
+    min-height: 100px; /* Set a smaller minimum height */
+    width: 150px; /* Fixed width for smaller shape */
+    background-color: #fff; /* Background color remains white */
+    padding: 10px; /* Reduced padding */
+    border-radius: 5px;
+    border: 2px solid transparent; /* Initially set to transparent, will be overridden by inline style */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform transition */
+    display: flex; /* Flex layout for icon and text */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+/* Icon styles */
+.info-icon {
+    margin-bottom: 5px; /* Space below the icon */
+    font-size: 1.5em; /* Decrease icon size */
+    color: inherit; /* Inherit the color from the parent, set by inline style */
+}
+
+/* Supporting text styles */
+.supporting-text {
+    font-size: 0.8em; /* Smaller font for supporting text */
+    color: inherit; /* Inherit the color from the parent, set by inline style */
+}
+
+.info-block:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+
+
+.faq-section {
+    text-align: center; /* Center FAQ section */
+    margin-top: 20px;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px; /* Increase width for FAQ section */
+    margin: 0 auto; /* Center the FAQ list */
+}
+
+.faq-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column; /* Stack question and answer vertically */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%; /* Ensure full width */
+    display: flex;
+    justify-content: space-between; /* Space between question and toggle */
+}
+
+.faq-icon {
+    margin-right: 10px; /* Space between icon and question text */
+}
+
+.faq-toggle {
+    margin-left: 10px;
+}
+
+.faq-answer {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    width: 100%; /* Ensure full width */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .info-block {
+        flex: 1 1 100%; /* Stack all info blocks on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .info-block {
+        flex: 1 1 calc(50% - 20px); /* Two blocks in a row */
+    }
+}
